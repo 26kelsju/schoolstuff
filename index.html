@@ -6,46 +6,87 @@
     <body>
         <a-scene>
             <a-camera>
-              <a-cursor></a-cursor>
-            </a-camera>
-        <a-box
-            position="0 -3 -5"
-            depth="2"
-            height="2"
-            width="2"
-            animation="
-                property: rotation;
-                from: 0 0 0;
-                to: 0 360 0;
-                dur: 2000;
-                easing: linear;
-                loop: 1;
-                dir:alternate;
-                startEvents:mouseenter;
+                <a-cursor></a-cursor>
+             </a-camera>
+            
+            <a-plane color="teal" rotation="-90 0 0" position="0 -5 0" height="500" width="500"></a-plane>
+            <a-sphere color="blue" position="-3 3 -8" animation="
+            property:opacity;
+            from:1;
+            to:0;
+            startEvents:click;
+            "animation__2="
+            property:scale;
+            from: 1 1 1;
+            to: 2 2 2;
+            loop:2;
+            dir:alternate;
+            startEvents:click;
+            "></a-sphere>
+            <a-box color="orange" position="3 3 -8" animation="
+            property:color;
+            from:#ff0000;
+            to:#0000ff;
+            loop:true;
+            startEvents:click;
+            "animation__2="
+            property:scale;
+            from: 1 1 1;
+            to: 2 2 2;
+            loop:2;
+            dir:alternate;
+            startEvents:click;
+            "></a-box>
+            <a-cylinder color="purple" position="0 3 -10" animation="
+            property:position;
+            from:0 3 -10;
+            to: 0 3 0;
+            loop:3;
+            startEvents:click;
+            "animation__2="
+            property:scale;
+            from: 1 1 1;
+            to: 2 2 2;
+            loop:2;
+            dir:alternate;
+            startEvents:click;
+            "></a-cylinder>
+            <a-dodecahedron position="2 0 -5" color="red" animation="
+            property:rotation;
+            from:0 0 0;
+            to: 180 180 180;
+            loop:true;
+            dir:alternate;
+            easing:easeInOutElastic;
+            dur:5000;
+            "animation__2="
+            property:scale;
+            from: 1 1 1;
+            to: 2 2 2;
+            loop:2;
+            dir:alternate;
+            startEvents:click;
+            "
+            ></a-dodecahedron>
+            <a-torus color="green" position="-2 0 -5" radius="2" radius-tubular="0.3" scale="0.5 0.5 0.5" animation="
+            property:scale;
+            from:0.5 0.5 0.5;
+            to: 1.5 1.5 1.5;
+            startEvents:click;
+            dir:alternate;
+            loop:2;
             "
             animation__2="
-            property: position;
-            from: 0 -3 -5 ;
-            to: 3 -3 -5 ;
-            dur: 1300 ;
-            loop:true;
+            property:rotation;
+            from: 0 0 0;
+            to:2700 1800 900;
             dir:alternate;
-            startEvents:mouseenter;
+            loop:2;
+            startEvents:click;
             "
+            ></a-torus>
             
             
-            animation__3="
-            property:scale;
-            from:0.5 2 1;
-            to:3 0.5 2;
-            dir:alternate;
-            loop:true;
-            dur:2100;
-            "
-            
-            color="orange"
-            >
-        </a-box>
         </a-scene>
     </body>
 </html>
