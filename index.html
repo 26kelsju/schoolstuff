@@ -14,6 +14,9 @@
             property:opacity;
             from:1;
             to:0;
+            loop:2;
+            dir:alternate;
+            easing:easeInBack;
             startEvents:click;
             "animation__2="
             property:scale;
@@ -21,6 +24,7 @@
             to: 2 2 2;
             loop:2;
             dir:alternate;
+            easing:easeInBack;
             startEvents:click;
             "></a-sphere>
             <a-box color="orange" position="3 3 -8" animation="
@@ -41,7 +45,9 @@
             property:position;
             from:0 3 -10;
             to: 0 3 0;
-            loop:3;
+            loop:10;
+            dir:alternate;
+            easing:easeInOutExpo;;
             startEvents:click;
             "animation__2="
             property:scale;
