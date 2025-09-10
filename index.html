@@ -17,8 +17,15 @@
             to:0.25;
             loop:true;
             dir:alternate;
-            
             "animation__2="
+            property:position;
+            from:-3 3 -8;
+            to:-3 6 -5;
+            loop:true;
+            dur:500;
+            dir:alternate;
+            easing:easeInOutQuint;
+            "animation__3="
             property:opacity;
             from:1;
             to:0;
@@ -33,6 +40,14 @@
             dir:alternate;
             easing:easeInOutQuad;
             "animation__2="
+            property:position;
+            from:3 3 -8;
+            to:4 5 -5;
+            loop:true;
+            dur:1500;
+            dir:alternate;
+            easing:easeInOutQuint;
+            "animation__3="
             property:opacity;
             from:1;
             to:0;
@@ -62,6 +77,14 @@
             easing:easeInOutCirc;
             dur:3000;
             "animation__2="
+            property:position;
+            from:2 0 -5;
+            to:1 -5 -5;
+            loop:true;
+            dur:5000;
+            dir:alternate;
+            easing:easeInOutQuint;
+            "animation__3="
             property:opacity;
             from:1;
             to:0;
@@ -75,12 +98,19 @@
             to: 1.5 1.5 1.5;
             dir:alternate;
             loop:true;
-            easing:easeInOutCirc;
-            "
-            animation__2="
+            "animation__2="
+            property:position;
+            from:-2 0 -5;
+            to:4 -3 5;
+            loop:true;
+            dur:2500;
+            dir:alternate;
+            easing:easeInOutQuint;
+            "animation__3="
             property:opacity;
             from:1;
             to:0;
+            easing:easeInOutQuint;
             startEvents:click;
             "
             ></a-torus>
