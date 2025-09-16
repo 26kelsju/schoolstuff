@@ -6,114 +6,29 @@
     <body>
         <a-scene>
             <a-camera>
-                <a-cursor></a-cursor>
+                <a-cursor fuse="true" fuse-timeout="100"></a-cursor>
              </a-camera>
             
             <a-plane color="teal" rotation="-90 0 0" position="0 -5 0" height="500" width="500"></a-plane>
-            <a-sphere color="blue" position="-3 3 -8" 
-            animation="
-            property:opacity;
-            from:1;
-            to:0.25;
-            loop:true;
-            dir:alternate;
-            "animation__2="
-            property:position;
-            from:-3 3 -8;
-            to:-3 6 -5;
-            loop:true;
-            dur:500;
-            dir:alternate;
-            easing:easeInOutQuint;
-            "animation__3="
+            
+            <a-box color="red" position="-3 0 -5" scale="5 2 0.5" animation="
             property:opacity;
             from:1;
             to:0;
-            startEvents:click;
-            "></a-sphere>
-            <a-box position="3 3 -8" 
-            animation="
-            property:color;
-            from:rgb(255, 0, 0);
-            to:rgb(0, 0, 255);
-            loop:true;
             dir:alternate;
-            easing:easeInOutQuad;
-            "animation__2="
-            property:position;
-            from:3 3 -4;
-            to:4 5 -8;
-            loop:true;
-            dur:1500;
-            dir:alternate;
-            easing:easeInOutQuint;
-            "animation__3="
-            property:opacity;
-            from:1;
-            to:0;
+            loop:2;
             startEvents:click;
             "></a-box>
-            <a-cylinder color="purple" position="0 3 -10" 
-            animation="
+            <a-cylinder color="blue" position="3 0 -5" scale="1 2 3" animation="
             property:position;
-            from:0 3 -10;
-            to: 0 3 0;
-            loop:true;
+            from:3 0 -5;
+            to: 3 5 -5;
             dir:alternate;
-            easing:easeInOutElastic;
-            "animation__2="
-            property:opacity;
-            from:1;
-            to:0;
+            dur:500;
+            loop:2;
             startEvents:click;
+            
             "></a-cylinder>
-            <a-dodecahedron position="2 0 -5" color="red" 
-            animation="
-            property:rotation;
-            from:0 0 0;
-            to: 180 180 180;
-            loop:true;
-            dir:alternate;
-            easing:easeInOutCirc;
-            dur:3000;
-            "animation__2="
-            property:position;
-            from:2 0 -5;
-            to:1 -5 -5;
-            loop:true;
-            dur:5000;
-            dir:alternate;
-            easing:easeInOutQuint;
-            "animation__3="
-            property:opacity;
-            from:1;
-            to:0;
-            startEvents:click;
-            "
-            ></a-dodecahedron>
-            <a-torus color="green" position="-2 0 -5" radius="2" radius-tubular="0.3" scale="0.5 0.5 0.5" 
-            animation="
-            property:scale;
-            from:0.5 0.5 0.5;
-            to: 1.5 1.5 1.5;
-            dir:alternate;
-            loop:true;
-            "animation__2="
-            property:position;
-            from:-2 0 -5;
-            to:4 -3 5;
-            loop:true;
-            dur:2500;
-            dir:alternate;
-            easing:easeInOutQuint;
-            "animation__3="
-            property:opacity;
-            from:1;
-            to:0;
-            easing:easeInOutQuint;
-            startEvents:click;
-            "
-            ></a-torus>
             
             
         </a-scene>
